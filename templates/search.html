@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block title %} Search Book {% endblock title %}
+{% block content %}
+<div>
+  <div
+    class="p-5 d-flex flex-column h-100 w-100 justify-content-center align-items-center text-center border border-dark landing"
+  >
+    <h1>
+      <span class="highlight display-1">Search a book</span>
+    </h1>
+
+    <form action='{{ url_for("search") }}' method="post">
+      <div class="form-group">
+        <label for="query"></label>
+        <input
+          type="text"
+          class="form-control"
+          name="query"
+          id="query"
+          aria-describedby="query"
+          placeholder="Search by ISBN, book title, or author"
+        />
+      </div>
+
+      <button type="submit" id="landing-btn" class="btn btn-primary">
+        <h1>Search</h1>
+      </button>
+    </form>
+  </div>
+  <div class="container">
+    <div class="card-columns mt-5">
+      {% for book in books %}
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{book.title}}</h5>
+          <p class="card-text">
+            {{book.author}}, {{book.year}}
+          </p>
+          <p class="card-text">
+            <small class="text-muted">ISBN: {{book.isbn}}</small>
+          </p>
+          <a
+            class="btn btn-primary"
+            href="{{ url_for('book', isbn = book.isbn) }}"
+            role="button"
+            >Read more</a
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block title %} Home {% endblock title %} {% block
+content %}
+<div class="landing">
+  <div
+    class="d-flex flex-wrap border-dark border h-100 m-0 text-center justify-content-around align-items-center"
+  >
+    {% if session.get('user_id') %}
+    <div>
+      <a
+        id="landing-btn"
+        class="btn btn-warning btn-block"
+        href="{{ url_for('logout') }}"
+        role="button"
+      >
+        <h1>Logout</h1>
+      </a>
+    </div>
+    {%- else -%}
+    <div>
+      <a
+        id="landing-btn"
+        class="btn btn-primary btn-block"
+        href="{{ url_for('login') }}"
+        role="button"
+      >
+        <h1>Login</h1>
+      </a>
+    </div>
+    {% endif %}
+
+    <div>
+      <a
+        id="landing-btn"
+        class="btn btn-secondary btn-block"
+        href="{{ url_for('register') }}"
+        role="button"
+      >
+        <h1>Register</h1>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content %}
