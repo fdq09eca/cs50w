@@ -164,16 +164,16 @@ input[type="range"]:focus::-ms-fill-upper {
 #no-comment-txt {
   margin-top: 5rem;
   display: block;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: whitesmoke;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: whitesmoke;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   #landing-btn {
     min-width: 400px;
   }
@@ -197,5 +197,4 @@ input[type="range"]:focus::-ms-fill-upper {
     border-radius: 5px;
     font-size: 2.5rem;
   }
-
 }
