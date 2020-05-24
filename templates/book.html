@@ -83,14 +83,11 @@ content %}
     </form>
   </div>
 </div>
-<div class="my-5" id="other-reviews">
+<div class="container border" id="other-reviews">
   <!-- Other users' reviews here. -->
   {% if reviews|selectattr('comment')|list|length %}
 
-  <!-- <h1 class="display-3">
-    <span class="highlight">Others reviews</span>
-  </h1> -->
-  <div class="row justify-content-center my-5">
+  <div class="card-columns my-5">
     {% for review in reviews if review.comment %}
     <div class="card p-3" id="review">
       <blockquote class="blockquote mb-0 card-body">
