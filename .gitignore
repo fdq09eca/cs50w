@@ -2,4 +2,4 @@
 tables.sql
 helpers.py
 reminder.md
-flash_session
+flask_session
