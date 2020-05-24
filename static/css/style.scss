@@ -9,9 +9,6 @@ body {
 }
 
 #_form-box {
-  margin-top: 150px;
-  max-width: 600px;
-  /* height: 320px; */
   border-radius: 5px;
   background-color: $form-bg-color;
   border: 1px solid #9c9c9c;
@@ -42,11 +39,6 @@ body {
 .highlight {
   @extend %hightlight-black;
 }
-
-#landing-btn {
-  min-width: 400px;
-}
-
 
 /* from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 
@@ -149,7 +141,6 @@ input[type="range"]:focus::-ms-fill-upper {
   max-width: 500px;
 }
 
-
 #landing-title,
 #landing-title-2 {
   display: none;
@@ -192,7 +183,20 @@ input[type="range"]:focus::-ms-fill-upper {
     font-size: 2.5rem;
   }
 
-  #others-comment{
+  #others-comment {
     width: 300px;
+  }
+
+  #_form-box {
+    margin-top: 150px;
+    max-width: 600px;
+    /* height: 320px; */
+    border-radius: 5px;
+    background-color: $form-bg-color;
+    border: 1px solid #9c9c9c;
+  }
+
+  #_form-form {
+    padding: 20px;
   }
 }
