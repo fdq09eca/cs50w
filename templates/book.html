@@ -4,7 +4,7 @@ content %}
   class="d-flex flex-column h-100 w-100 justify-content-center align-items-center text-center border border-dark landing"
 >
   <h1 class="mb-5">
-    <span class="highlight display-1"> {{book.title}}</span>
+    <span id="landing-title"> {{book.title}}</span>
   </h1>
 
   <div class="d-flex flex-wrap w-100 justify-content-around align-items-center">
@@ -52,7 +52,7 @@ content %}
         </div>
         <div class="d-flex flex-column align-items-center">
           <label for="rating"
-            ><span class="highlight display-4"> Rate and Review </span></label
+            ><span id="landing-title-2"> Rate and Review </span></label
           >
           <output name="rating_out" id="rating_out">
             2.5
@@ -114,9 +114,13 @@ content %}
     {% endfor %}
   </div>
   {% else %}
-  <div class="d-flex justify-content-center"><h1 class="display-3">
-    <span class="highlight">No comment for <i>{{book.title}}</i> yet.</span>
-  </h1></div>
+  <div class="d-flex justify-content-center">
+    <h1>
+      <span id="no-comment-txt"
+        >No comment for <i>{{book.title}}</i> yet.</span
+      >
+    </h1>
+  </div>
   {% endif %}
 </div>
 
