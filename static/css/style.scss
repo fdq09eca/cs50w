@@ -47,12 +47,6 @@ body {
   min-width: 400px;
 }
 
-#other-reviews {
-  margin-top: 150px;
-  #review {
-    min-width: 300px;
-  }
-}
 
 /* from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 
@@ -153,4 +147,52 @@ input[type="range"]:focus::-ms-fill-upper {
 
 #review-form {
   max-width: 500px;
+}
+
+
+#landing-title,
+#landing-title-2 {
+  display: none;
+}
+
+#no-comment-txt {
+  margin-top: 5rem;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: whitesmoke;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 1000px) {
+  #landing-btn {
+    min-width: 400px;
+  }
+  #landing-title,
+  #no-comment-txt {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 6.5rem;
+  }
+
+  #landing-title-2 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+  }
+
+  #others-comment{
+    width: 300px;
+  }
 }
