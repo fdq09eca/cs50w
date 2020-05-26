@@ -33,7 +33,6 @@ This project has the following features:
 - Sass
 - HTML
 
-
 ## Requirement
 
 1. Registration: 0:31, 2:08
