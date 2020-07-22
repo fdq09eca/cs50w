@@ -4,10 +4,10 @@
 
 It is a book searching website.
 
-- In particular, after login, it allows users to search, rate and, comment for a book which exists in the database.
+- After login, it allows users to search, rate and, comment for a book which exists in the database.
 - Users can see their own rating of a book and its average rating which is rated by other users
-- Moreover, users' book comment will be displayed to the public.
-- Lastly, it opens a public API for querying a book's detail, average rating and number of rating by ISBN.
+- Users' book comment will be displayed to the public.
+- It opens a public API for querying a book's detail, average rating and number of rating by ISBN.
 
 ## Demo
 
