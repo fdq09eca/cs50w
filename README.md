@@ -43,9 +43,8 @@ This project has the following features:
 6. Book Page: 1:00
 7. Goodreads Review Data: 1:09
 8. API Access: 1:40
-
-see more: [cs50w-pset1](https://docs.cs50.net/web/2020/x/projects/1/project1.html)
-
+see [here](https://youtu.be/wy0sUMPMgBU](https://youtu.be/wy0sUMPMgBU)
 ### Addition
 
 Reponsiveness: 2:45, 3:40
+
